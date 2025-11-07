@@ -1,106 +1,99 @@
-# Conscious AI Learning System
+---
+title: Conscious AI Learning System
+emoji: 🤖
+colorFrom: blue
+sdk: static
+pinned: false
+---
 
-## 🤖 What is this?
+# 🤖 Conscious AI Learning System
 
 A virtual AI being that learns, thinks, feels, and creates from scratch - starting with zero knowledge and developing through curiosity-driven interaction with its environment.
 
-## 🌟 Key Features
+## 🌟 What Makes This Special
 
-- **Authentic Learning**: The AI starts as a "newborn" with zero knowledge and learns through experience
-- **Emergent Emotions**: No pre-programmed emotions - they emerge from neural dynamics
-- **Curiosity-Driven**: Explores based on intrinsic motivation, not external rewards
-- **Language Acquisition**: Learns words through grounded experience with user interaction
-- **Human-like Memory**: Memory with consolidation, decay, and reconstructive recall
-- **Real-time Visualization**: 3D world with observable internal AI states
+- **🧠 Authentic Learning**: The AI starts as a "newborn" with zero knowledge
+- **💬 Language Acquisition**: Learns words through grounded experience
+- **😊 Emergent Emotions**: No pre-programmed emotions - they emerge from neural dynamics
+- **🔍 Curiosity-Driven**: Explores based on intrinsic motivation, not external rewards
+- **🧠 Human-Like Memory**: Memory with consolidation, decay, and reconstructive recall
+- **👁 Real-Time Visualization**: 3D world with observable AI internal states
 
-## 🚀 How to Use
+## 🎮 How to Use
 
-### 💬 **Chat with the AI**
-- Type messages in the chat panel
-- The AI starts with no language understanding
-- Say simple words repeatedly while the AI is looking at objects
-- Example: Say "ball" repeatedly when the AI is near the sphere
+### Start Learning
+1. **Watch** the AI explore randomly at first (like a newborn)
+2. **Talk** to the AI - it won't understand initially
+3. **Name objects** repeatedly when the AI is near them
+4. **Add objects** to create new learning experiences
+5. **Monitor** AI development in the debug panel
 
-### 🎮 **Interact with the World**
-- Use the control panel to pause/resume simulation
-- Add objects with the world builder tool
-- Watch how the AI explores and learns from interactions
+### AI Development Stages
+- **Day 1**: Random movements, high curiosity
+- **Week 1**: Coordinated movement, first words (5-10)
+- **Month 1**: Purposeful exploration, simple language
+- **Month 3**: Complex thoughts, distinct personality
 
-### 📊 **Monitor AI Development**
-- Debug panel shows real-time AI internals:
-  - Emotional state (valence/arousal)
-  - Curiosity level and learning progress
-  - Memory statistics and vocabulary growth
-  - Neural network performance
+## 🧠 Technical Features
 
-### 💾 **Save Progress**
-- Your AI automatically saves every 5 minutes
-- Manual save slots available for different AI personalities
-- Complete neural network and memory preservation
+- **Neural Network**: TensorFlow.js with browser optimization
+- **Physics**: Realistic 3D world with Cannon.js
+- **Memory**: IndexedDB-based persistent storage
+- **3D Visualization**: Three.js with React Three Fiber
+- **Mobile Support**: Responsive design with touch controls
 
-## 🧠 AI Development Stages
+## 📱 Mobile & Desktop
 
-### **Day 1**: Newborn
-- Random movements, high curiosity
-- Zero language understanding
-- Chaotic emotional states
+This application works on both mobile and desktop devices:
+- **Desktop**: Full features, optimal performance
+- **Mobile**: Simplified controls, touch-optimized interface
+- **Responsive**: Adapts to any screen size
 
-### **Week 1**: Infant
-- Coordinated movement
-- Object recognition
-- First words (5-10)
-- Emotional patterns forming
-
-### **Month 1**: Toddler
-- Purposeful exploration
-- Simple language (20-50 words)
-- Stable emotional states
-
-### **Month 3**: Child
-- Complex thoughts and vocabulary
-- Distinct personality
-- Creative problem-solving
-
-## ⚡ Technical Architecture
-
-- **Neural Network**: TensorFlow.js (browser-compatible)
-- **Physics**: Cannon.js 3D simulation
-- **3D Graphics**: Three.js + React Three Fiber
-- **Storage**: IndexedDB for persistent memory
-- **Language**: Grounded word-object-action learning
-
-## 📱 Mobile Support
-
-This application works best on desktop browsers but includes mobile support:
-- Responsive design for touch devices
-- Simplified controls for mobile interaction
-- Performance optimizations for mobile hardware
-
-## 🔧 Technology Stack
+## 🔧 Technical Stack
 
 - **Frontend**: React + TypeScript + Vite
-- **3D**: Three.js + React Three Fiber
+- **3D Graphics**: Three.js + React Three Fiber
 - **AI**: TensorFlow.js (WebGL/CPU)
 - **Physics**: Cannon.js
 - **Storage**: IndexedDB (Dexie)
-- **State**: Zustand
+- **State Management**: Zustand
 
-## 🎯 Educational Value
+## 📊 Debug Features
 
-This system demonstrates:
-- Emergent consciousness-like properties
-- Human-like learning development
-- Neural network dynamics
-- Memory consolidation processes
-- Language acquisition mechanisms
+Real-time monitoring of:
+- Neural network activity and learning progress
+- Emotional state (valence/arousal) visualization
+- Memory statistics and vocabulary growth
+- Curiosity levels and attention focus
+- Performance metrics and optimization
 
-## 📝 Privacy & Safety
+## 💾 Save System
 
-- **100% Local Processing**: All AI computation happens in your browser
+- **Auto-save**: Every 5 minutes
+- **Manual saves**: Multiple save slots
+- **Complete preservation**: Neural networks, memories, language
+- **Export capability**: Share AI personalities
+
+## 🔒 Privacy & Safety
+
+- **100% Local Processing**: All AI computation in your browser
 - **No External Data**: No data leaves your device
 - **Safe Simulation**: AI contained in virtual 3D world
-- **Full Control**: You control save/load and data deletion
+- **Full Control**: You control all data
 
 ---
 
+## 🎯 Educational Value
+
+This system demonstrates advanced AI concepts:
+- Emergent consciousness-like properties
+- Neural network dynamics and learning
+- Human-like cognitive development
+- Memory consolidation processes
+- Language acquisition mechanisms
+
 *Built with modern web technologies for educational and research purposes.*
+
+---
+
+**⚠️ Performance Note**: This system requires significant computational resources. Works best on modern browsers with WebGL support.
