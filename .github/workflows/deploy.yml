@@ -1,0 +1,42 @@
+name: Deploy to Hugging Face Spaces
+
+on:
+  push:
+    branches:
+      - main
+      - huggingface
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        submodules: true
+        fetch-depth: 0
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: |
+        npm install
+        cd web
+        npm install
+
+    - name: Build application
+      run: |
+        cd web
+        npm run build
+
+    - name: Deploy to Hugging Face Spaces
+      uses: huggingface/huggingface_hub-deploy@v4
+      with:
+        HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        HF_SPACE_ID: your-space-id
+        SPACE_NAME: conscious-ai-learning-system
