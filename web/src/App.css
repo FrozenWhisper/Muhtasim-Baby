@@ -1,0 +1,174 @@
+/* Global styles for the Conscious AI application */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background: #000;
+  color: #fff;
+  overflow: hidden;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.world-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ui-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.ui-overlay > * {
+  pointer-events: auto;
+}
+
+/* Performance panel */
+.stats-panel {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+}
+
+/* Animation classes */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .ui-overlay {
+    font-size: 14px;
+  }
+
+  .chat-panel {
+    width: 95%;
+    left: 2.5%;
+    right: 2.5%;
+  }
+
+  .debug-panel {
+    width: 95%;
+    left: 2.5%;
+    right: 2.5%;
+    top: 10px;
+  }
+}
+
+/* Touch interactions */
+@media (hover: none) {
+  .control-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  button:active {
+    transform: scale(0.95);
+  }
+}
+
+/* Loading animation */
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+.loading-indicator {
+  animation: pulse 2s infinite;
+}
+
+/* Error states */
+.error-message {
+  color: #ef4444;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 8px;
+  padding: 12px;
+  margin: 10px;
+}
+
+.success-message {
+  color: #10b981;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: 8px;
+  padding: 12px;
+  margin: 10px;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus states */
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .chat-panel,
+  .debug-panel {
+    border: 2px solid #fff;
+    background: rgba(0, 0, 0, 0.95);
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
