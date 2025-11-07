@@ -1,0 +1,41 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2024-01-01T00:00:00.000Z",
+  "ai": {
+    "learningRate": 0.001,
+    "curiosityThreshold": 0.3,
+    "explorationBias": 0.6,
+    "memoryDecayRate": 0.001,
+    "maxEpisodicMemories": 10000,
+    "languageComprehensionUpdateRate": 0.1
+  },
+  "world": {
+    "gravity": -9.81,
+    "maxObjects": 100,
+    "worldSize": {
+      "x": 100,
+      "y": 50,
+      "z": 100
+    },
+    "physicsSteps": 60,
+    "visionDistance": 20
+  },
+  "performance": {
+    "updateFrequency": 60,
+    "autoSaveInterval": 300000,
+    "backupCount": 5,
+    "memoryCleanupInterval": 3600000
+  },
+  "ui": {
+    "showDebugPanels": true,
+    "showFPS": true,
+    "autoCameraFollow": true,
+    "theme": "default"
+  },
+  "logging": {
+    "level": "info",
+    "maxFileSize": "10MB",
+    "maxFiles": 5,
+    "enableConsole": true
+  }
+}
