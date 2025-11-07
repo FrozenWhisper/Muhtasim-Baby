@@ -1,0 +1,48 @@
+{
+  "name": "@conscious-ai/web",
+  "version": "1.0.0",
+  "description": "Web-optimized Conscious AI Learning System for Hugging Face Spaces",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "serve": "vite preview --port 7860",
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.17.0",
+    "@tensorflow/tfjs-backend-webgl": "^4.17.0",
+    "@tensorflow/tfjs-backend-cpu": "^4.17.0",
+    "cannon-es": "^0.20.0",
+    "three": "^0.155.0",
+    "@react-three/fiber": "^8.13.7",
+    "@react-three/drei": "^9.88.17",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "zustand": "^4.4.1",
+    "idb": "^7.1.1",
+    "dexie": "^3.2.4",
+    "comlink": "^4.4.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@types/three": "^0.155.0",
+    "@types/uuid": "^9.0.7",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
